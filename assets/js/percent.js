@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function(){
         if (counter == 11) {
             clearInterval(i);
         }
-    }, 150);
+    }, 170);
 })
 ;
 document.addEventListener('DOMContentLoaded', function(){
