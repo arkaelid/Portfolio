@@ -1,0 +1,134 @@
+@media screen and (max-height: 788px){
+  body{
+    overflow-y: visible;
+  }
+}
+
+@media screen and (min-width: 725px) and (max-width: 1100px) {
+  header {
+    height: 93vh;
+  }
+  nav ul {
+    display: flex;
+    background-color: rgb(15, 44, 73);
+    
+
+  }
+  .container .card{
+    margin: 0;
+  }
+ figure {
+  display: none;
+ }
+  nav.nav-img {
+    display: none;
+  }
+  .nav-img{
+    display: none;
+    
+  }
+  nav .nav-img img {
+    display: none;
+    
+  }
+  nav {
+    border-bottom: #000 solid;
+    border-top: #000 solid;
+  }
+  .contact-form {
+    margin-top: 150px;
+    
+  }
+  .dl-cv {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .dl-cv h2{
+    font-size: 2em;
+    margin-right: 20px;
+    color: rgb(50, 235, 111);
+  }
+  .dl-cv .pdf {
+    color: white;
+    font-size: 6rem;
+  } 
+}
+
+@media screen and (max-width: 725px) {
+  body {
+    height: 100vh;
+    overflow-y:visible;
+  }
+  nav .nav-img {
+    display: none;
+  }
+  header {
+    height: 93vh;
+  }
+  nav ul {
+    background-color: rgb(15, 44, 73);
+    justify-content: space-around;
+    display: flex;
+    
+  }
+  .container .card{
+    margin-bottom: 5rem;
+  }
+  nav {
+    display: block;
+    position: fixed;
+    z-index: 11;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-bottom: #000 solid;
+    border-top: #000 solid;
+  }
+  nav span {
+    display: none;
+  }
+  
+  nav ul li a {
+    font-size: 1.3rem;
+  }
+  nav .nav-img img {
+    display: none;
+    height: 0;
+  }
+  figure {
+    display: none;
+  }
+  .contact-form {
+    margin-top: 100;
+    
+  }
+  .contact-form{
+    margin-top: 1rem;
+  }
+  .title-exp{
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+  main .titre-skill {
+    margin-top: 0;
+  }
+  .dl-cv {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .dl-cv h2{
+    font-size: 2em;
+    margin-right: 20px;
+    align-items: center;
+    color: rgb(50, 235, 111);
+    
+  }
+  .dl-cv .pdf {
+    color: white;
+    font-size: 2rem;
+  } 
+}
