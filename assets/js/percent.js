@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function(){
         if (counter == 71) {
             clearInterval(i);
         }
-    }, 30);
+    }, 28);
 });
 
 document.addEventListener('DOMContentLoaded', function(){
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function(){
         if (counter == 61) {
             clearInterval(i);
         }
-    }, 27);
+    }, 32);
 });
 
 document.addEventListener('DOMContentLoaded', function(){
@@ -74,3 +74,21 @@ document.addEventListener('DOMContentLoaded', function(){
     }, 20);
 });
 
+$(document).ready(function () {
+    
+    if ($(window).width() > 1100) {
+        $("nav").on('mouseleave', function () {
+            $("nav").slideUp("2000", function () {
+                $(".vide").fadeIn("slow")
+            })
+        })
+
+        $(".vide").on('mouseover', function () {
+            $(".vide").fadeOut("slow", function () {
+                $("nav").slideDown("2000")
+            })
+        })
+    }
+    
+   
+})

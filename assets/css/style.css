@@ -7,13 +7,13 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  text-decoration: none;
 }
 body {
   overflow-x: hidden;
   height: 100vh;
   width: 100vw;
   background-color: rgb(34, 34, 34);
-  overflow-y: hidden;
 }
 header {
   display: flex;
@@ -124,7 +124,10 @@ nav ul li a i {
   color: rgb(8, 109, 8);
   text-shadow: rgb(8, 109, 8) 1px 0 10px;
 }
-
+.vide{
+  height: 3vh;
+  display: none;
+}
 main{
   display: flex;
   flex-direction: column;
@@ -775,73 +778,97 @@ main .titre-skill{
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-@media (min-width: 650px) and (max-width: 900px) {
-  .content .title2 {
-    font-size: 2.3rem;
-    text-shadow: 1px 1px 1px  black;
-  }
-  .content .description {
-    font-size: 1rem;
-    text-shadow: 1px 1px 1px  black;
-  }
-  .content button {
-    font-size: 0.7rem;
-  }
-
-  .item2 {
-    width: 160px;
-    height: 270px;
-  }
-
-  .item2:nth-child(3) {
-    left: 50%;
-  }
-  .item2:nth-child(4) {
-    left: calc(50% + 170px);
-  }
-  .item2:nth-child(5) {
-    left: calc(50% + 340px);
-  }
-  .item2:nth-child(6) {
-    left: calc(50% + 510px);
-    opacity: 0;
-  }
+#Mention {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#Mention h2{
+  color: rgb(50, 235, 111);
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0 5rem;
+  font-size: 2rem;
+  letter-spacing: .2rem;
+  text-align: center;
 }
 
-@media (max-width: 650px) {
-  .content .title2 {
-    font-size: 1.5rem;
-    text-shadow: 1px 1px 1px  black;
-  }
-  .content .description {
-    font-size: 1rem;
-    text-shadow: 1px 1px 1px  black;
-  }
-  .content button {
-    font-size: 0.7rem;
-  }
+#Mention .moi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#Mention .moi h3{
+  margin-top: 3rem;
+  color: #fff;
+  font-size: 1.5rem;
+}
+#Mention .moi p{
+  color: #949494 ;
+  margin-top: .5rem;
+}
+#Mention .heber {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#Mention .heber h3{
+  margin-top: 3rem;
+  color: #fff;
+  font-size: 1.5rem;
+}
+#Mention .heber p{
+  color: #949494 ;
+  margin-top: .5rem;
+}
+#Mention .créditPhoto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#Mention .créditPhoto h3{
+  margin-top: 3rem;
+  color: #fff;
+  font-size: 1.5rem;
+}
+#Mention .créditPhoto p{
+  color: #949494 ;
+  margin-top: .5rem;
+  width: 50%;
+  text-align: center;
+}#Mention .repro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#Mention .repro h3{
+  margin-top: 3rem;
+  color: #fff;
+  font-size: 1.5rem;
+}
+#Mention .repro p{
+  color: #949494 ;
+  margin-top: .5rem;
+  width: 50%;
+  text-align: center;
+}
+footer{
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  background-color: #424242;
+  position: absolute;
+  bottom: 0;
+}
+footer p{
+  color: #fff;
+}
 
-  .item2 {
-    width: 130px;
-    height: 220px;
-  }
-
-  .item2:nth-child(3) {
-    left: 50%;
-  }
-  .item2:nth-child(4) {
-    left: calc(50% + 140px);
-  }
-  .item2:nth-child(5) {
-    left: calc(50% + 280px);
-  }
-  .item2:nth-child(6) {
-    left: calc(50% + 420px);
-    opacity: 0;
-  }
-  .nav-pro{
-    position: absolute;
-    bottom: 5rem;
-  }
+footer p a {
+  color: green;
 }
 
