@@ -75,20 +75,38 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 
 $(document).ready(function () {
-    
-    if ($(window).width() > 1100) {
-        $("nav").on('mouseleave', function () {
-            $("nav").slideUp("2000", function () {
-                $(".vide").fadeIn("slow")
-            })
-        })
+    // Fonction pour gérer le comportement en fonction de la largeur de l'écran
+    function adjustBehavior() {
+        if ($(window).width() > 1100) {
+            $("nav").on('mouseleave', function () {
+                $("nav").slideUp("2000", function () {
+                    $(".vide").fadeIn("slow");
+                });
+            });
 
-        $(".vide").on('mouseover', function () {
-            $(".vide").fadeOut("slow", function () {
-                $("nav").slideDown("2000")
-            })
-        })
+            $(".vide").on('mouseover', function () {
+                $(".vide").fadeOut("slow", function () {
+                    $("nav").slideDown("2000");
+                });
+            });
+
+            // Vérifier si la navigation est cachée, puis la faire réapparaître si nécessaire
+            if ($("nav").is(":hidden")) {
+                $("nav").show();
+            }
+        } else {
+            // Désactiver les événements si la largeur de l'écran est inférieure à 1100
+            $("nav").off('mouseleave');
+            $(".vide").off('mouseover');
+        }
     }
-    
-   
-})
+
+    // Appeler la fonction initiale
+    adjustBehavior();
+
+    // Ajouter un écouteur d'événements pour le redimensionnement de la fenêtre
+    $(window).resize(function () {
+        // Appeler la fonction à chaque redimensionnement de la fenêtre
+        adjustBehavior();
+    });
+});

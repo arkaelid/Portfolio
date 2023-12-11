@@ -352,7 +352,18 @@ main .titre-skill{
   color: black;
   background-color: rgb(8, 109, 8);
 }
-
+.siteIco ul{
+  display: flex;
+  
+}
+.siteIco ul li{
+  padding: 1rem;
+}
+.siteIco ul li a{
+  color: rgb(50, 235, 111);
+  font-size: 3rem;
+  
+}
 
 /* expérience */ 
 .title-exp {
@@ -756,7 +767,7 @@ main .titre-skill{
 
 .nav-pro {
   position: fixed;
-  bottom: 0;
+  bottom: 5vh;
   left: 50%;
   transform: translateX(-50%);
   z-index: 5;
@@ -861,8 +872,9 @@ footer{
   align-items: center;
   justify-content: center; 
   background-color: #424242;
-  position: absolute;
+  position: fixed;
   bottom: 0;
+  z-index: 999;
 }
 footer p{
   color: #fff;
